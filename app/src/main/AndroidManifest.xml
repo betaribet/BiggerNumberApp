@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hwk01">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".youWon"></activity>
+        <activity android:name=".Level10Activity" />
+        <activity android:name=".Level09Activity" />
+        <activity android:name=".Level08Activity" />
+        <activity android:name=".result" />
+        <activity android:name=".Level01Activity" />
+        <activity android:name=".Level07Activity" />
+        <activity android:name=".Level06Activity" />
+        <activity android:name=".Level05Activity" />
+        <activity android:name=".Level04Activity" />
+        <activity android:name=".Level03Activity" />
+        <activity android:name=".Level02Activity" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

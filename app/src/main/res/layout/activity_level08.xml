@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDA0D0"
+    android:orientation="vertical"
+    tools:context=".Level08Activity">
+    <TextView
+        android:id="@+id/level8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#A8CCD7"
+        android:gravity="center"
+        android:text=" LEVEL 08 "
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_margin="100dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/roundtext"
+        android:text=" Which one is bigger ? "
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="411dp"
+            android:layout_height="189dp"
+            android:layout_margin="5dp"
+            android:columnCount="8"
+            android:rowCount="8">
+
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/btn_backgrnd"
+                android:onClick="onClickButton"
+                android:text="0"
+                android:textFontWeight="1"
+                android:textSize="50dp" />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_row="1"
+                android:layout_column="6"
+                android:background="@drawable/btn_backgrnd"
+                android:onClick="onClickButton"
+                android:text="0"
+                android:textFontWeight="1"
+                android:textSize="50dp" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="200dp"
+                android:layout_row="1"
+                android:layout_column="7"
+                android:background="@drawable/btn_backgrnd"
+                android:onClick="onClickButton"
+                android:text="0"
+                android:textFontWeight="1"
+                android:textSize="50dp" />
+
+
+
+            <Button
+                android:id="@+id/btn5"
+                android:background="@drawable/btn_backgrnd"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="90dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:text="0"
+                android:textFontWeight="1"
+                android:textSize="50dp"
+                android:onClick="onClickButton"
+                />
+            <Button
+                android:id="@+id/btn4"
+                android:background="@drawable/btn_backgrnd"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textFontWeight="1"
+                android:textSize="50dp"
+                android:onClick="onClickButton"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#A8CCD7"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+</LinearLayout>
